@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Hello Facebook</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="/js/facebookConnected.js" type="application/javascript"></script>
+</head>
+<body>
+<h3>Connected to Facebook</h3>
+
+<p>
+    You are now connected to your Facebook account.
+    Enter you login for registration
+    Click <a href="/fb-controller">here</a> to see some entries from your Facebook feed.
+    <div id="action" style="display: none;">
+        <input type="text" id="new-login"/>
+        <button id="facebook-signup">Sign Up</button>
+    </div>
+    <form id="facebook-login-form" action="/login" method="post" style="display: none;">
+        <input type="text" name="username" id="facebook-username" />
+        <input type="password" name="password" id="facebook-password" />
+    </form>
+</p>
+</body>
+</html>
